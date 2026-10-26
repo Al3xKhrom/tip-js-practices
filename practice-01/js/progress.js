@@ -1,7 +1,7 @@
 "use strict";
 
-const totalTasks = 7;
-const completedTasks = 2;
+const totalTasks = 12;
+const completedTasks = 5;
 
 
 const isNumber = typeof totalTasks === "number" && typeof completedTasks === "number";
