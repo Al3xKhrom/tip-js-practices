@@ -1,0 +1,23 @@
+/health: status=200, ok=true, content-type=application/json; charset=utf-8
+  тип тела: объект
+  id: null
+/tasks: status=200, ok=true, content-type=application/json; charset=utf-8
+  тип тела: коллекция
+  id: [
+   1,  4,  7, 10, 13,
+  16, 19, 22, 25, 28,
+  31, 34
+]
+/tasks?completed=false&priority=high: status=200, ok=true, content-type=application/json; charset=utf-8
+  тип тела: коллекция
+  id: [ 4, 13, 34 ]
+/tasks/25: status=200, ok=true, content-type=application/json; charset=utf-8
+  тип тела: объект
+  id: 25
+/tasks/999: status=404, ok=false, content-type=application/json; charset=utf-8
+  тип тела: ошибка
+  id: null
+  code: TASK_NOT_FOUND
+/categories: status=200, ok=true, content-type=application/json; charset=utf-8
+  тип тела: коллекция
+  id: [ 1, 2, 3 ]

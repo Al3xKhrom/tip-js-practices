@@ -1,0 +1,32 @@
+Оба успешны {
+  ok: true,
+  partial: false,
+  tasks: 1,
+  categories: 1,
+  errorTasks: null,
+  errorCategories: null
+}
+Ошибка задач {
+  ok: false,
+  partial: true,
+  tasks: null,
+  categories: 1,
+  errorTasks: 'http',
+  errorCategories: null
+}
+Ошибка категорий {
+  ok: false,
+  partial: true,
+  tasks: 1,
+  categories: null,
+  errorTasks: null,
+  errorCategories: 'http'
+}
+Обе ошибки {
+  ok: false,
+  partial: false,
+  tasks: null,
+  categories: null,
+  errorTasks: 'http',
+  errorCategories: 'http'
+}

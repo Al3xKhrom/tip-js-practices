@@ -1,0 +1,171 @@
+
+> tip-js-practice-05@1.0.0 check:client
+> node checks/api-client.checks.js
+
+FAIL: 01. buildUrl соединяет baseUrl и путь без двойного слеша
+Error: Не реализовано: buildUrl
+    at buildUrl (file:///mnt/data/practice05_work/practice-05/starter/practice-05/src/api-client.js:26:9)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:57:5
+    at check (file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:11:11)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:55:7
+    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+FAIL: 02. buildUrl кодирует параметры и сохраняет false и 0
+Error: Не реализовано: buildUrl
+    at buildUrl (file:///mnt/data/practice05_work/practice-05/starter/practice-05/src/api-client.js:26:9)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:63:26
+    at check (file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:11:11)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:62:7
+FAIL: 03. buildUrl не изменяет входной объект query
+Error: Не реализовано: buildUrl
+    at buildUrl (file:///mnt/data/practice05_work/practice-05/starter/practice-05/src/api-client.js:26:9)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:81:3
+    at check (file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:11:11)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:79:7
+FAIL: 04. createApiClient проверяет конфигурацию
+AssertionError [ERR_ASSERTION]: The error is expected to be an instance of "TypeError". Received "Error"
+
+Error message:
+
+Не реализовано: createApiClient
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:96:12
+    at check (file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:11:11)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:85:7
+FAIL: 05. requestJson выполняет GET с Accept и signal
+Error: Не реализовано: createApiClient
+    at createApiClient (file:///mnt/data/practice05_work/practice-05/starter/practice-05/src/api-client.js:48:9)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:106:18
+    at check (file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:11:11)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:100:7
+FAIL: 06. requestJson возвращает разобранный JSON успешного ответа
+Error: Не реализовано: createApiClient
+    at createApiClient (file:///mnt/data/practice05_work/practice-05/starter/practice-05/src/api-client.js:48:9)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:120:18
+    at check (file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:11:11)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:118:7
+FAIL: 07. успешный ответ 204 преобразуется в null
+Error: Не реализовано: createApiClient
+    at createApiClient (file:///mnt/data/practice05_work/practice-05/starter/practice-05/src/api-client.js:48:9)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:128:18
+    at check (file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:11:11)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:127:7
+FAIL: 08. JSON-ошибка 404 преобразуется в ApiError с полями контракта
+Error: Не реализовано: createApiClient
+    at createApiClient (file:///mnt/data/practice05_work/practice-05/starter/practice-05/src/api-client.js:48:9)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:136:18
+    at check (file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:11:11)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:135:7
+FAIL: 09. HTTP-ошибка без JSON сохраняет приоритет статуса
+Error: Не реализовано: createApiClient
+    at createApiClient (file:///mnt/data/practice05_work/practice-05/starter/practice-05/src/api-client.js:48:9)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:155:18
+    at check (file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:11:11)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:154:7
+FAIL: 10. успешный ответ с неверным Content-Type отклоняется
+Error: Не реализовано: createApiClient
+    at createApiClient (file:///mnt/data/practice05_work/practice-05/starter/practice-05/src/api-client.js:48:9)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:168:18
+    at check (file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:11:11)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:167:7
+FAIL: 11. повреждённый JSON успешного ответа отклоняется
+Error: Не реализовано: createApiClient
+    at createApiClient (file:///mnt/data/practice05_work/practice-05/starter/practice-05/src/api-client.js:48:9)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:179:18
+    at check (file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:11:11)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:178:7
+FAIL: 12. значение вместо Response отклоняется как неверный ответ
+Error: Не реализовано: createApiClient
+    at createApiClient (file:///mnt/data/practice05_work/practice-05/starter/practice-05/src/api-client.js:48:9)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:194:18
+    at check (file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:11:11)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:193:7
+FAIL: 13. сетевая ошибка преобразуется и сохраняется как cause
+Error: Не реализовано: createApiClient
+    at createApiClient (file:///mnt/data/practice05_work/practice-05/starter/practice-05/src/api-client.js:48:9)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:203:18
+    at check (file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:11:11)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:201:7
+FAIL: 14. превышение времени запроса имеет kind timeout
+Error: Не реализовано: createApiClient
+    at createApiClient (file:///mnt/data/practice05_work/practice-05/starter/practice-05/src/api-client.js:48:9)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:229:18
+    at check (file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:11:11)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:213:7
+FAIL: 15. внешний AbortSignal отличает отмену от тайм-аута
+Error: Не реализовано: createApiClient
+    at createApiClient (file:///mnt/data/practice05_work/practice-05/starter/practice-05/src/api-client.js:48:9)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:254:18
+    at check (file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:11:11)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:238:7
+FAIL: 16. ApiError от обработки ответа не маскируется как network
+Error: Не реализовано: createApiClient
+    at createApiClient (file:///mnt/data/practice05_work/practice-05/starter/practice-05/src/api-client.js:48:9)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:266:18
+    at check (file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:11:11)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:265:7
+FAIL: 17. createTaskApi требует requestJson
+AssertionError [ERR_ASSERTION]: The error is expected to be an instance of "TypeError". Received "Error"
+
+Error message:
+
+Не реализовано: createTaskApi
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:277:10
+    at check (file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:11:11)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:276:7
+FAIL: 18. getTasks нормализует допустимые фильтры
+Error: Не реализовано: createTaskApi
+    at createTaskApi (file:///mnt/data/practice05_work/practice-05/starter/practice-05/src/task-api.js:57:9)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:301:15
+    at check (file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:11:11)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:282:7
+FAIL: 19. getTasks отклоняет неверные и неизвестные фильтры до запроса
+Error: Не реализовано: createTaskApi
+    at createTaskApi (file:///mnt/data/practice05_work/practice-05/starter/practice-05/src/task-api.js:57:9)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:325:15
+    at check (file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:11:11)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:323:7
+FAIL: 20. getTaskById проверяет id и путь
+Error: Не реализовано: createTaskApi
+    at createTaskApi (file:///mnt/data/practice05_work/practice-05/starter/practice-05/src/task-api.js:57:9)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:350:15
+    at check (file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:11:11)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:348:7
+FAIL: 21. getCategories возвращает проверенный массив
+Error: Не реализовано: createTaskApi
+    at createTaskApi (file:///mnt/data/practice05_work/practice-05/starter/practice-05/src/task-api.js:57:9)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:365:15
+    at check (file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:11:11)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:364:7
+FAIL: 22. ответы задач проверяются по схеме
+Error: Не реализовано: createTaskApi
+    at createTaskApi (file:///mnt/data/practice05_work/practice-05/starter/practice-05/src/task-api.js:57:9)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:384:17
+    at check (file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:11:11)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:375:7
+FAIL: 23. коллекция задач отклоняет повторяющиеся id и неверный meta.total
+Error: Не реализовано: createTaskApi
+    at createTaskApi (file:///mnt/data/practice05_work/practice-05/starter/practice-05/src/task-api.js:57:9)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:399:17
+    at check (file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:11:11)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:393:7
+FAIL: 24. одиночная задача и категории проверяются по схеме
+Error: Не реализовано: createTaskApi
+    at createTaskApi (file:///mnt/data/practice05_work/practice-05/starter/practice-05/src/task-api.js:57:9)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:405:26
+    at check (file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:11:11)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:404:7
+FAIL: 25. loadInitialData начинает два независимых запроса параллельно
+Error: Не реализовано: createTaskApi
+    at createTaskApi (file:///mnt/data/practice05_work/practice-05/starter/practice-05/src/task-api.js:57:9)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:429:15
+    at check (file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:11:11)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:420:7
+FAIL: 26. loadInitialData передаёт отказ одного из запросов вызывающему коду
+Error: Не реализовано: createTaskApi
+    at createTaskApi (file:///mnt/data/practice05_work/practice-05/starter/practice-05/src/task-api.js:57:9)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:451:15
+    at check (file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:11:11)
+    at file:///mnt/data/practice05_work/practice-05/starter/practice-05/checks/api-client.checks.js:449:7
+
+Итог клиента: успешно 0, ошибок 26.

@@ -1,0 +1,6 @@
+
+> tip-js-practice-05@1.0.0 example:abort
+> node examples/timeout-abort.js
+
+Тайм-аут: kind=timeout
+Внешняя отмена: kind=aborted

@@ -1,0 +1,9 @@
+
+> tip-js-practice-05@1.0.0 example:general
+> node examples/general-client.js
+
+Общий запрос /tasks?completed=false&priority=high
+id: [ 4, 13, 34 ]
+meta.total: 3
+Категории: 1: Учёба; 2: Проект; 3: Организация
+Ошибка 999: kind=http, status=404, code=TASK_NOT_FOUND

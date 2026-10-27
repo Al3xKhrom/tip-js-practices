@@ -1,0 +1,22 @@
+{
+  "name": "tip-js-practice-05",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node api/server.mjs",
+    "client": "node src/main.js",
+    "example:order": "node examples/event-loop.js",
+    "example:fetch": "node examples/fetch-basics.js",
+    "check:api": "node checks/api-server.checks.js",
+    "check:client": "node checks/api-client.checks.js",
+    "check:integration": "node checks/integration.checks.js",
+    "test": "npm run check:api && npm run check:client && npm run check:integration",
+    "check:own": "node checks/own.checks.js",
+    "example:compare": "node examples/compare-delays.js",
+    "example:inspect": "node examples/inspect-api.js",
+    "example:general": "node examples/general-client.js",
+    "example:partial": "node examples/partial-results.js",
+    "example:abort": "node examples/timeout-abort.js"
+  }
+}
